@@ -43,9 +43,12 @@ header {
     height: 60px;
     background-color: white;
     border-radius: 50%;
-    padding: 2px
+    padding: 2px;
 }
 
+.container__img:hover {
+    transform: scale(1.1);
+}
 
 .img__user {
     width: 100%;
@@ -99,6 +102,41 @@ header {
     background-color: var(--lightRed);
 }
 
+.card__play {
+    background: url(./assets/icon-play.svg) no-repeat;
+    background-position: 95% -20%;
+    background-size: 65px 65px;
+    background-color: var(--softBlue);
+}
+
+.card__study {
+    background: url(./assets/icon-study.svg) no-repeat;
+    background-position: 95% -20%;
+    background-size: 65px 65px;
+    background-color: var(--lightPink);
+}
+
+.card__exercise {
+    background: url(./assets/icon-exercise.svg) no-repeat;
+    background-position: 95% -20%;
+    background-size: 65px 65px;
+    background-color: var(--limeGreen);
+}
+
+.card__social {
+    background: url(./assets/icon-social.svg) no-repeat;
+    background-position: 95% -20%;
+    background-size: 65px 65px;
+    background-color: var(--violet);
+}
+
+.card__selfCare {
+    background: url(./assets/icon-self-care.svg) no-repeat;
+    background-position: 95% -20%;
+    background-size: 65px 65px;
+    background-color: var(--softOrange);
+}
+
 
 .container__card {
     background-color: var(--darkBlue);
@@ -125,6 +163,11 @@ header {
 
 .card__name {
     color: white;
+}
+
+.more-option {
+    width: 20; 
+    height: 5;
 }
 
 .card__hours {
