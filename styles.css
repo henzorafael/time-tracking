@@ -12,6 +12,7 @@
 
     --veryDarkBlue: hsl(226, 43%, 10%);
     --darkBlue: hsl(235, 46%, 20%);
+    --hoverDarkBlue: hsl(235, 46%, 35%);
     --desaturatedBlue: hsl(235, 45%, 61%);
     --paleBlue: hsl(236, 100%, 87%);
 }
@@ -27,6 +28,8 @@ body {
 header {
     background-color: var(--darkBlue);
     border-radius: 8px;
+    animation: fromTop .7s backwards;
+    animation-delay: .2s;
 }
 
 .header__user {
@@ -85,15 +88,24 @@ header {
     color: var(--desaturatedBlue);
     font-weight: 400;
     font-size: 14px;
+    cursor: pointer;
+}
+
+.filter__item:hover {
+    color: rgba(255, 255, 255, 0.644);
+}
+
+.filter__selected {
+    color: white;
 }
 
 .card {
     margin-top: 18px;
     padding-top: 32px;
     border-radius: 12px;
-   
-    
 }
+
+
 
 .card__work {
     background: url(./assets/icon-work.svg) no-repeat;
@@ -147,6 +159,11 @@ header {
     gap: 8px;
 }
 
+.container__card:hover {
+    background-color: var(--hoverDarkBlue);
+    cursor: pointer;
+}
+
 .first-row {
     display: flex;
     flex-direction: row;
@@ -170,11 +187,18 @@ header {
     height: 5;
 }
 
+.container__more-options:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
 .card__hours {
     color: white;
     font-weight: 300;
     font-size: 24px;
 }
+
+
 
 .card__lastWeek {
     color: var(--paleBlue);
@@ -182,3 +206,56 @@ header {
     font-size: 12px;
 }
 
+main section {
+    animation: fromLeft 1s backwards;
+
+}
+
+
+main section:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+main section:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+main section:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+main section:nth-child(4) {
+    animation-delay: 0.8s;
+}
+
+main section:nth-child(5) {
+    animation-delay: 1s;
+}
+
+main section:nth-child(6) {
+    animation-delay: 1.2s;
+}
+
+@keyframes fromTop {
+    from {
+        opacity: 0;
+        transform: translateY(-30px)
+    }
+    
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px)
+    }
+    
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
