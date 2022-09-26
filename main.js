@@ -127,7 +127,9 @@ main.innerHTML = data.map(function (json) {
             <div class="container__card">
                 <article class="first-row">
                     <h2 class="card__name">${json.title}</h2>
-                    <img class="more-options" src="./assets/icon-ellipsis.svg" alt="More option">
+                    <div class="container__more-options">
+                      <img class="more-options" src="./assets/icon-ellipsis.svg" alt="More options">
+                    </div>
                 </article>
                 <article class="second-row">
                     <h3 class="card__hours">${json.timeframes.weekly.current}hrs</h3>
