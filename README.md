@@ -8,7 +8,7 @@
 
 Projeto construido em desafio do FrontEndMentor - https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw
 
-Trainando HTML, CSS (FlexBox, Grid Layout, Animations, etc) e JavaScript (rendering cards)
+Treinando HTML, CSS (FlexBox, Grid Layout, Animations, etc) e JavaScript (rendering cards)
 
 [Clique aqui para acessar](https://henzorafael.github.io/time-tracking)
 
